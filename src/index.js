@@ -35,7 +35,7 @@ root.render(
       <Route path="/client/*" element={<ClientLayout />} />
       <Route path="/auth/*" element={<AuthLayout />} />
       <Route path="/guide/" element={<GuideLayout />} />
-      <Route path="*" element={<Navigate to="/visiteur/Accueil" replace />} />
+      <Route path="*" element={<Navigate to="/client/index" replace />} />
     </Routes>
   </BrowserRouter>
 );

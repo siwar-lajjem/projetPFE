@@ -22,26 +22,18 @@ import Register from "views/examples/Register.js";
 import Login from "views/examples/Login.js";
 import Tables from "views/examples/Tables.js";
 import Icons from "views/examples/Icons.js";
-import EspaceVisiteur from "layouts/espaceVisiteur";
 
 var routes = [
   {
-    path: "Accueil",
-    name: "Accueil",
-    icon: "ni ni-tv-2 text-primary",
-    component: <EspaceVisiteur />,
-    layout: "/visiteur",
-  },
-  {
     path: "/index",
-    name: "Dashboard",
+    name: "Guide",
     icon: "ni ni-tv-2 text-primary",
     component: <Index />,
     layout: "/guide",
   },
   {
-    path: "/accueil",
-    name: "Dashboard",
+    path: "/index",
+    name: "Client",
     icon: "ni ni-tv-2 text-primary",
     component: <Index />,
     layout: "/client",
