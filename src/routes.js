@@ -17,13 +17,20 @@
 */
 import Index from "views/Index.js";
 import Profile from "views/examples/Profile.js";
-// import Maps from "views/examples/Maps.js";
 import Register from "views/examples/Register.js";
 import Login from "views/examples/Login.js";
 import Tables from "views/examples/Tables.js";
 import Icons from "views/examples/Icons.js";
+import EspaceVisiteur from "./layouts/EspaceVisiteur";
 
 var routes = [
+  {
+    path: "/accueil",
+    name: "Guide",
+    icon: "ni ni-tv-2 text-primary",
+    component: <EspaceVisiteur />,
+    layout: "/visiteur",
+  },
   {
     path: "/index",
     name: "Guide",
@@ -45,13 +52,7 @@ var routes = [
     component: <Icons />,
     layout: "/client",
   },
-  // {
-  //   path: "/maps",
-  //   name: "Maps",
-  //   icon: "ni ni-pin-3 text-orange",
-  //   component: <Maps />,
-  //   layout: "/client",
-  // },
+ 
   {
     path: "/user-profile",
     name: "User Profile",
